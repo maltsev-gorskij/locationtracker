@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.fragments.maps.MapsFragment">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fcvNavigationNestedHostFragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/navigation_nested_graph" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bnvMapsSwitcher"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bnv_height"
+        android:layout_marginStart="@dimen/bnv_side_indent"
+        android:layout_marginEnd="@dimen/bnv_side_indent"
+        android:layout_marginBottom="@dimen/bnv_side_indent"
+        android:background="@drawable/round_corners"
+        android:elevation="@dimen/bnv_elevation"
+        app:itemIconSize="@dimen/bnv_icon_size"
+        app:labelVisibilityMode="labeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_navigation" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.fragments.maps.nested.LocationFragment">
+
+    <TextView
+        android:id="@+id/tvSignedInUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/map_right_side_buttons_margin"
+        app:layout_constraintBottom_toBottomOf="@+id/fabSignOut"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/fabSignOut" />
+
+    <com.yandex.mapkit.mapview.MapView
+        android:id="@+id/mvYandex"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/fabSignOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/map_left_side_buttons_margin"
+        android:layout_marginTop="@dimen/map_top_buttons_margin"
+        android:text="@string/fab_back"
+        android:textAlignment="center"
+        app:icon="@drawable/ic_angle_bracket_left"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/FabShapeStyleBack"
+        app:backgroundTint="@color/white"/>
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/fabZoomIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/map_right_side_buttons_margin"
+        android:layout_marginBottom="@dimen/map_fab_zoom_indent"
+        app:icon="@drawable/ic_zoom_in"
+        app:layout_constraintBottom_toTopOf="@+id/fabZoomOut"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fabSignOut"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:backgroundTint="@color/white"/>
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/fabZoomOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/map_fab_zoom_indent"
+        android:layout_marginEnd="@dimen/map_right_side_buttons_margin"
+        app:icon="@drawable/ic_zoom_out"
+        app:layout_constraintBottom_toTopOf="@+id/fabCurrentLocation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fabZoomIn"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:backgroundTint="@color/white"/>
+
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/fabCurrentLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/map_right_side_buttons_margin"
+        android:layout_marginBottom="@dimen/map_bottom_buttons_margin"
+        android:text="@string/fab_show_my_location"
+        app:icon="@drawable/ic_current_location_splashscreen"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:backgroundTint="@color/white"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

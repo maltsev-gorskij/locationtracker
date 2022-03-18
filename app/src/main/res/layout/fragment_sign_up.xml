@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+    tools:context=".view.fragments.login.SignUpFragment">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/cv_back_margin_bottom"
+        app:cardCornerRadius="@dimen/cardview_corner_radius"
+        app:cardElevation="@dimen/cardview_elevation"
+        app:layout_constraintBottom_toTopOf="@+id/cardView"
+        app:layout_constraintStart_toStartOf="@+id/cardView">
+
+        <ImageView
+            android:id="@+id/ivBackButton"
+            android:layout_width="@dimen/iv_back_width"
+            android:layout_height="@dimen/iv_back_height"
+            android:background="@color/browser_actions_bg_grey"
+            android:src="@drawable/ic_arrow_back" />
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="@dimen/cardview_width"
+        android:layout_height="@dimen/cardview_height"
+        app:cardCornerRadius="@dimen/cardview_corner_radius"
+        app:cardElevation="@dimen/cardview_elevation"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="517dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/cardview_margin_left"
+                android:layout_marginTop="@dimen/cardview_signin_margin_top"
+                android:layout_marginEnd="@dimen/cardview_margin_right"
+                android:text="@string/signup_title_uppercase"
+                android:textColor="@color/black"
+                android:textSize="@dimen/cardview_signin_text_size"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilUserName"
+                style="@style/Widget.App.TextInputLayout.OutlinedCutOffCorners"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/cardview_margin_left"
+                android:layout_marginTop="@dimen/tf_username_margin_top"
+                android:layout_marginEnd="@dimen/cardview_margin_right"
+                android:hint="@string/tf_username_hint"
+                app:errorEnabled="true"
+                app:layout_constraintTop_toBottomOf="@+id/tvSignUp"
+                app:startIconDrawable="@drawable/ic_username">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/teUserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:singleLine="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilPassword"
+                style="@style/Widget.App.TextInputLayout.OutlinedCutOffCorners"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/cardview_margin_left"
+                android:layout_marginTop="@dimen/tf_password_margin_top"
+                android:layout_marginEnd="@dimen/cardview_margin_right"
+                android:hint="@string/tf_password_hint"
+                android:inputType="textPassword"
+                app:endIconMode="password_toggle"
+                app:errorEnabled="true"
+                app:layout_constraintTop_toBottomOf="@+id/tilUserName"
+                app:startIconDrawable="@drawable/ic_password">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tePassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btSignUp"
+                style="@style/Widget.App.Button.ContainedCufOffCorners"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/bt_signin_height"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="@dimen/cardview_margin_left"
+                android:layout_marginTop="@dimen/bt_signup_margin_top"
+                android:layout_marginEnd="@dimen/cardview_margin_right"
+                android:text="@string/signup_title_uppercase"
+                app:layout_constraintTop_toBottomOf="@+id/tilPassword" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

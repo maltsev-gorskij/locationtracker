@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">LocationTracker</string>
+
+    <!--  Main Activity  -->
+    <string name="bnv_tracker_button_text">Tracker</string>
+    <string name="bnv_routes_button_text">Routes</string>
+
+    <!--  SignIn Fragment  -->
+    <string name="madb_error_cannot_login">Unable to login</string>
+    <string name="madb_provide_credentials">Invalid username or password</string>
+    <string name="tv_account_absent">"Don't have an account?"</string>
+    <string name="tv_sign_up_button"><u>Sign Up</u></string>
+    <string name="tv_forgotpassword">Forgot password?</string>
+    <string name="signin_title_uppercase">SIGN IN</string>
+
+    <!--  SignUp Fragment  -->
+    <string name="madb_error_signup_failed">Sign Up Failed</string>
+    <string name="signup_title_uppercase">SIGN UP</string>
+
+    <!--  SignUp and SignIn Fragments  -->
+    <string name="til_error_must_be_email">Username must be e-mail</string>
+    <string name="til_error_password_is_empty">Password is empty</string>
+    <string name="bt_ok">OK</string>
+    <string name="tf_username_hint">User Name</string>
+    <string name="tf_password_hint">Password</string>
+
+    <!--  Location Fragment  -->
+    <string name="fab_show_my_location">My Location</string>
+
+    <!--  Route Fragment  -->
+    <string name="fab_route_start">Route Start</string>
+    <string name="tv_selected_date">Select date</string>
+    <string name="mdp_select_date">Select date</string>
+    <string name="local_date_formatter_pattern">dd.MM.yyyy</string>
+    <string name="snackbar_no_locations">No locations found for</string>
+    <string name="snackbar_no_internet">No internet connection</string>
+    <string name="snackbar_cloud_database_error">Cloud database error</string>
+    <string name="snackbar_found_locations">Found locations:</string>
+    <string name="snackbar_route_updated">Route updated</string>
+
+    <!--  Location and Route Fragments  -->
+    <string name="signed_in">Signed in as:</string>
+    <string name="permission_rationale_title">Warning</string>
+    <string name="positive_button">Accept</string>
+    <string name="negative_button">Decline</string>
+    <string name="fine_location_rationale_message">Fine location access is required for app to work correctly. Proceed to \"Permissions -> Location\" and then choose \"Allow\". Also check "User precise location" if presented</string>
+    <string name="background_location_rationale_message">Background location is required for app to work correctly. Proceed to \"Permissions -> Location\" and then choose \"Allow all the time\"</string>
+    <string name="fab_back">SignOut</string>
+    <string name="back_button_alert_title">You are about to sign out</string>
+    <string name="back_button_alert_message">You will be returned to sign in page. Are you sure?</string>
+
+    <!--  Location Service  -->
+    <string name="ls_database_exception">CloudDatabaseRepository exception: </string>
+    <string name="tv_start_point">START</string>
+</resources>

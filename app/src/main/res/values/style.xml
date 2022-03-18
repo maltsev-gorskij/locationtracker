@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ShapeAppearanceOverlay.App.CutOffCorners" parent="">
+        <item name="cornerFamily">cut</item>
+        <item name="cornerSize">6dp</item>
+    </style>
+
+    <style name="Widget.App.TextInputLayout.OutlinedCutOffCorners" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.App.CutOffCorners</item>
+    </style>
+
+    <style name="Widget.App.Button.ContainedCufOffCorners" parent="Widget.MaterialComponents.Button">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.App.CutOffCorners</item>
+    </style>
+</resources>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--  MainActivity  -->
+    <dimen name="bnv_height">50dp</dimen>
+    <dimen name="bnv_side_indent">5dp</dimen>
+    <dimen name="bnv_elevation">20dp</dimen>
+    <dimen name="bnv_icon_size">20dp</dimen>
+
+    <!--  SignIn Fragment  -->
+    <dimen name="bt_signin_margin_top">80dp</dimen>
+    <dimen name="tv_do_not_have_account_text_size">18sp</dimen>
+    <dimen name="tv_signup_button_margin_left">10dp</dimen>
+    <dimen name="ll_signup_button_margin_top">25dp</dimen>
+    <dimen name="tv_authorization_margin_bottom">10dp</dimen>
+
+    <!--  SignUp Fragment  -->
+    <dimen name="bt_signup_margin_top">80dp</dimen>
+    <dimen name="iv_back_width">58dp</dimen>
+    <dimen name="iv_back_height">50dp</dimen>
+    <dimen name="cv_back_margin_bottom">20dp</dimen>
+
+    <!--  SignUp and SignIn Fragments  -->
+    <dimen name="cardview_margin_left">30dp</dimen>
+    <dimen name="cardview_margin_right">30dp</dimen>
+    <dimen name="cardview_signin_margin_top">45dp</dimen>
+    <dimen name="cardview_signin_text_size">25sp</dimen>
+    <dimen name="cardview_width">357dp</dimen>
+    <dimen name="cardview_height">511dp</dimen>
+    <dimen name="cardview_elevation">20dp</dimen>
+    <dimen name="tf_username_margin_top">50dp</dimen>
+    <dimen name="tf_password_margin_top">10dp</dimen>
+    <dimen name="tv_forgotpassword_textsize">16sp</dimen>
+    <dimen name="bt_signin_height">70dp</dimen>
+    <dimen name="cardview_corner_radius">10dp</dimen>
+
+    <!--  Location Fragments  -->
+    <dimen name="map_right_side_buttons_margin">10dp</dimen>
+    <dimen name="map_bottom_buttons_margin">70dp</dimen>
+    <dimen name="map_top_buttons_margin">30dp</dimen>
+    <dimen name="map_left_side_buttons_margin">20dp</dimen>
+    <dimen name="map_fab_zoom_indent">10dp</dimen>
+    <dimen name="map_fab_calendar_top_margin">15dp</dimen>
+</resources>
